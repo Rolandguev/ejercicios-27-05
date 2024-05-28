@@ -5,12 +5,12 @@ int main()
 {
 
     int x;
-    cout << "ingrese un numero: " << endl;
+    cout << "ingrese tamano de arreglo en numeros: " << endl;
     cin >> x;
 
     int numero[x];
     int pares[x];
-    int paresCount = 0;
+    int p = 0;
 
     cout << "ingrese " << x << " numeros " << endl;
     
@@ -20,12 +20,12 @@ int main()
         
         if (numero[i] % 2 == 0)
         {
-            pares[paresCount] = numero[i];
-            paresCount++;
+            pares[p] = numero[i];
+            p++;
         }
     }
-        cout << "los numeros pares son: ";
-        for (int i = 0; i < paresCount; i++)
+        cout << "El arreglo de pares son: ";
+        for (int i = 0; i < p; i++)
         {
             cout << pares[i] << " ";
         }
